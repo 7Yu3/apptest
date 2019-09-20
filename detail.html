@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>明细</title>
+    <link href="detail.css" rel="stylesheet" type="text/css "/>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body style="background-color: #F0F2F5">
+<div id="demo" class="out"></div>
+<script type="text/babel">
+    class Demo extends React.Component{
+        render(){
+            const MenuIterms=[
+                {moneyChange:'+100',matter:'订单返利',time:'2018-12-30',balance:6},
+                {moneyChange:'-570',matter:'商城消费',time:'2018-11-18',balance:990},
+                {moneyChange:'+100',matter:'平台分红',time:'2018-11-05',balance:2530},
+                {moneyChange:'-1000',matter:'提现',time:'2018-11-05',balance:2530},
+            ];
+            return(
+                <div>
+                  <div className="topBox"><p className="topBoxText">明细</p></div>
+                  <div className="middleBox">
+                      <span className="middleBoxText1">余额</span><span className="middleBoxText2">T劵</span>
+                  </div>
+                    <div className="bottomBox">
+                    <table className="bottomBoxTable">
+                        <tr>
+                            <th>金额变动</th>
+                            <th>事项</th>
+                            <th>时间</th>
+                            <th>余额</th>
+                        </tr>
+
+                        {MenuIterms.map((value)=>{
+                            return(
+                                <tr>
+                                <td className="moneyChangeTd">{value.moneyChange}</td>
+                                <td className="otherTd">{value.matter}</td>
+                                <td className="otherTd">{value.time}</td>
+                                <td className="otherTd">{value.balance}</td>
+                                </tr>
+                            );
+                        })}
+
+                    </table>
+                    </div>
+                </div>
+            );
+        }
+    }
+    ReactDOM.render(
+        <Demo/>,
+        document.getElementById("demo")
+    );
+</script>
+</body>
+</html>

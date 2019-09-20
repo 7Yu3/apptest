@@ -1,0 +1,79 @@
+
+.out{
+    width: 360px;
+    margin: 0 auto;
+}
+.topBox{
+    background-color: white;
+    height: 60px;
+    border-bottom: 1px solid #F3F2F2;
+
+}
+.topBoxText{
+    color: #000000;
+    font-family:"Source Han Sans CN" ;
+    text-align: center;
+    font-size: 20px;
+   padding-top: 30px;
+}
+.middleBox{
+    height: 60px;
+    width: 360px;
+    background-color: white;
+}
+.middleBoxText1{
+    text-align: center;
+    font-size: 14px;
+    font-family:"Source Han Sans CN" ;
+    display: inline-block;
+    width: 36px;
+    color: #EE0303;
+    border-bottom:3px solid #EE0303;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.middleBoxText2{
+    text-align: center;
+    font-size: 14px;
+    font-family:"Source Han Sans CN" ;
+    display: inline-block;
+    width: 36px;
+    margin-left: 150px;
+    margin-top: 20px;
+
+}
+.bottomBox{
+    width: 360px;
+    height: 450px;
+    background-color: white;
+
+}
+
+.bottomBoxTable{
+    /*去掉表头之间的缝隙*/
+    border-collapse:collapse;
+
+}
+.bottomBoxTable tr{
+    height: 45px;
+    text-align: center;
+    font-family: "Source Han Sans CN";
+
+
+}
+.bottomBoxTable th{
+    font-size: 14px;
+    background-color: #FAFAFA;
+    width: 90px;
+
+}
+.bottomBoxTable td{
+    border-bottom: 1px solid #F3F2F2;
+    font-size: 12px;
+}
+.moneyChangeTd{
+    color: #EE0303;
+}
+.otherTd{
+    color: #707070;
+}
